@@ -1,0 +1,6 @@
+C:\Users\tom.giglia\source\repos\MonitorEOCDB\MonitorEOCDB\obj\Debug\MonitorEOCDB.csprojAssemblyReference.cache
+C:\Users\tom.giglia\source\repos\MonitorEOCDB\MonitorEOCDB\bin\Debug\MonitorEOCDB.exe.config
+C:\Users\tom.giglia\source\repos\MonitorEOCDB\MonitorEOCDB\bin\Debug\MonitorEOCDB.exe
+C:\Users\tom.giglia\source\repos\MonitorEOCDB\MonitorEOCDB\bin\Debug\MonitorEOCDB.pdb
+C:\Users\tom.giglia\source\repos\MonitorEOCDB\MonitorEOCDB\obj\Debug\MonitorEOCDB.exe
+C:\Users\tom.giglia\source\repos\MonitorEOCDB\MonitorEOCDB\obj\Debug\MonitorEOCDB.pdb

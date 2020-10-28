@@ -1,0 +1,153 @@
+10/9/2020 10:32:01 AM:DatabaseReplicateStatesProcessor: Connection has been opened.
+10/9/2020 10:32:01 AM:DatabaseReplicateStatesProcessor: Reading the results.
+10/9/2020 10:32:01 AM:replica_id: cd08e36b-1a5c-4059-92f7-0c3725cc4bdb
+database_name: EOC_TRAN
+replicaName: JUKLITE-SQL1\SQL2104WIN2016
+is_fail_ready: True
+is_pending_secondary_suspend: False
+is_database_joined: True
+10/9/2020 10:32:01 AM:replica_id: ee62eb9b-e3bc-4ac7-948e-2544a6f426b0
+database_name: EOC_TRAN
+replicaName: JUKLITE-SQL2\SQL2104WIN2016
+is_fail_ready: True
+is_pending_secondary_suspend: False
+is_database_joined: True
+10/9/2020 10:32:01 AM:DatabaseReplicateStateProcesseor::analyze: There are 2 to analyze.
+10/9/2020 10:32:01 AM:EOC_TRAN AOAG is stable.
+10/9/2020 10:32:01 AM:getPrimaryNodeId: Connection has been opened.
+10/9/2020 10:32:01 AM:getPrimaryNodeId: Reading the results.
+10/9/2020 10:32:01 AM:TransactionLogProcessor::execSQLPerf: Connection has been opened.
+10/9/2020 10:32:01 AM:TransactionLogProcessor::execSQLPerf: Reading the results.
+10/9/2020 10:33:56 AM:dataSource: juklite-lstnr
+dataSource1: juklite-sql1.elsagrd.com
+dataSource2: juklite-sql2.elsagrd.com
+catalog: model
+backlogcatalog: EOC_STAGING
+emailAddress: 10.24.3.1
+emailFrom: tom.giglia@brewster.eoccloud.co.uk
+emailTo: tgiglia@hotmail.com
+backlogthreshold: 100000
+backlogsubscriber: eoctran@local
+logfile: MonitorEOCDB.txt
+trantarget: EOC_TRAN
+tranthreshold: 50
+10/9/2020 10:33:57 AM:DatabaseReplicateStatesProcessor: Connection has been opened.
+10/9/2020 10:33:57 AM:DatabaseReplicateStatesProcessor: Reading the results.
+10/9/2020 10:33:57 AM:replica_id: cd08e36b-1a5c-4059-92f7-0c3725cc4bdb
+database_name: EOC_TRAN
+replicaName: JUKLITE-SQL1\SQL2104WIN2016
+is_fail_ready: True
+is_pending_secondary_suspend: False
+is_database_joined: True
+10/9/2020 10:33:57 AM:replica_id: ee62eb9b-e3bc-4ac7-948e-2544a6f426b0
+database_name: EOC_TRAN
+replicaName: JUKLITE-SQL2\SQL2104WIN2016
+is_fail_ready: True
+is_pending_secondary_suspend: False
+is_database_joined: True
+10/9/2020 10:33:57 AM:DatabaseReplicateStateProcesseor::analyze: There are 2 to analyze.
+10/9/2020 10:33:57 AM:EOC_TRAN AOAG is stable.
+10/9/2020 10:33:57 AM:getPrimaryNodeId: Connection has been opened.
+10/9/2020 10:33:57 AM:getPrimaryNodeId: Reading the results.
+10/9/2020 10:33:57 AM:TransactionLogProcessor::execSQLPerf: Connection has been opened.
+10/9/2020 10:33:57 AM:TransactionLogProcessor::execSQLPerf: Reading the results.
+10/9/2020 10:51:48 AM:dataSource: juklite-lstnr
+dataSource1: juklite-sql1.elsagrd.com
+dataSource2: juklite-sql2.elsagrd.com
+catalog: model
+backlogcatalog: EOC_STAGING
+emailAddress: 10.24.3.1
+emailFrom: tom.giglia@brewster.eoccloud.co.uk
+emailTo: tgiglia@hotmail.com
+backlogthreshold: 100000
+backlogsubscriber: eoctran@local
+logfile: MonitorEOCDB.txt
+trantarget: EOC_TRAN
+tranthreshold: 50
+10/9/2020 10:51:48 AM:DatabaseReplicateStatesProcessor: Connection has been opened.
+10/9/2020 10:51:48 AM:DatabaseReplicateStatesProcessor: Reading the results.
+10/9/2020 10:51:48 AM:replica_id: cd08e36b-1a5c-4059-92f7-0c3725cc4bdb
+database_name: EOC_TRAN
+replicaName: JUKLITE-SQL1\SQL2104WIN2016
+is_fail_ready: True
+is_pending_secondary_suspend: False
+is_database_joined: True
+10/9/2020 10:51:48 AM:replica_id: ee62eb9b-e3bc-4ac7-948e-2544a6f426b0
+database_name: EOC_TRAN
+replicaName: JUKLITE-SQL2\SQL2104WIN2016
+is_fail_ready: True
+is_pending_secondary_suspend: False
+is_database_joined: True
+10/9/2020 10:51:48 AM:DatabaseReplicateStateProcesseor::analyze: There are 2 to analyze.
+10/9/2020 10:51:48 AM:EOC_TRAN AOAG is stable.
+10/9/2020 10:51:48 AM:getPrimaryNodeId: Connection has been opened.
+10/9/2020 10:51:48 AM:getPrimaryNodeId: Reading the results.
+10/9/2020 10:51:48 AM:TransactionLogProcessor::execSQLPerf: Connection has been opened.
+10/9/2020 10:51:48 AM:TransactionLogProcessor::execSQLPerf: Reading the results.
+10/19/2020 11:00:47 AM:dataSource: juklite-lstnr
+dataSource1: juklite-sql1.elsagrd.com
+dataSource2: juklite-sql2.elsagrd.com
+catalog: model
+backlogcatalog: EOC_STAGING
+emailAddress: 10.24.3.1
+emailFrom: tom.giglia@brewster.eoccloud.co.uk
+emailTo: tgiglia@hotmail.com
+backlogthreshold: 100000
+backlogsubscriber: eoctran@local
+logfile: MonitorEOCDB.txt
+trantarget: EOC_TRAN
+tranthreshold: 50
+10/19/2020 11:00:47 AM:DatabaseReplicateStatesProcessor: Connection has been opened.
+10/19/2020 11:00:47 AM:DatabaseReplicateStatesProcessor: Reading the results.
+10/19/2020 11:00:47 AM:replica_id: cd08e36b-1a5c-4059-92f7-0c3725cc4bdb
+database_name: EOC_TRAN
+replicaName: JUKLITE-SQL1\SQL2104WIN2016
+is_fail_ready: True
+is_pending_secondary_suspend: False
+is_database_joined: True
+10/19/2020 11:00:47 AM:replica_id: ee62eb9b-e3bc-4ac7-948e-2544a6f426b0
+database_name: EOC_TRAN
+replicaName: JUKLITE-SQL2\SQL2104WIN2016
+is_fail_ready: True
+is_pending_secondary_suspend: False
+is_database_joined: True
+10/19/2020 11:00:47 AM:DatabaseReplicateStateProcesseor::analyze: There are 2 to analyze.
+10/19/2020 11:00:47 AM:EOC_TRAN AOAG is stable.
+10/19/2020 11:00:47 AM:getPrimaryNodeId: Connection has been opened.
+10/19/2020 11:00:47 AM:getPrimaryNodeId: Reading the results.
+10/19/2020 11:00:47 AM:TransactionLogProcessor::execSQLPerf: Connection has been opened.
+10/19/2020 11:00:47 AM:TransactionLogProcessor::execSQLPerf: Reading the results.
+10/20/2020 9:20:30 AM:dataSource: juklite-lstnr
+dataSource1: juklite-sql1.elsagrd.com
+dataSource2: juklite-sql2.elsagrd.com
+catalog: model
+backlogcatalog: EOC_STAGING
+emailAddress: 10.24.3.1
+emailFrom: tom.giglia@brewster.eoccloud.co.uk
+emailTo: tgiglia@hotmail.com
+backlogthreshold: 100000
+backlogsubscriber: eoctran@local
+logfile: MonitorEOCDB.txt
+trantarget: EOC_TRAN
+tranthreshold: 0.01
+10/20/2020 9:20:30 AM:DatabaseReplicateStatesProcessor: Connection has been opened.
+10/20/2020 9:20:30 AM:DatabaseReplicateStatesProcessor: Reading the results.
+10/20/2020 9:20:30 AM:replica_id: cd08e36b-1a5c-4059-92f7-0c3725cc4bdb
+database_name: EOC_TRAN
+replicaName: JUKLITE-SQL1\SQL2104WIN2016
+is_fail_ready: True
+is_pending_secondary_suspend: False
+is_database_joined: True
+10/20/2020 9:20:30 AM:replica_id: ee62eb9b-e3bc-4ac7-948e-2544a6f426b0
+database_name: EOC_TRAN
+replicaName: JUKLITE-SQL2\SQL2104WIN2016
+is_fail_ready: True
+is_pending_secondary_suspend: False
+is_database_joined: True
+10/20/2020 9:20:30 AM:DatabaseReplicateStateProcesseor::analyze: There are 2 to analyze.
+10/20/2020 9:20:30 AM:EOC_TRAN AOAG is stable.
+10/20/2020 9:20:30 AM:getPrimaryNodeId: Connection has been opened.
+10/20/2020 9:20:30 AM:getPrimaryNodeId: Reading the results.
+10/20/2020 9:20:30 AM:TransactionLogProcessor::execSQLPerf: Connection has been opened.
+10/20/2020 9:20:30 AM:TransactionLogProcessor::execSQLPerf: Reading the results.
+10/20/2020 9:20:30 AM:TransactionLogProcessor::execSQLPerf: Connection has been opened.
