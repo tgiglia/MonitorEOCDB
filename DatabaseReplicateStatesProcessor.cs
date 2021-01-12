@@ -24,7 +24,9 @@ namespace MonitorEOCDB
         }
         public bool executeSQL(ConfigData cd)
         {
-            Console.WriteLine("trying to connect to: " + cd.dataSource);
+            
+            Logger.logIt(cd,"DatabaseReplicaStatesRow: trying to connect to: " + cd.dataSource);
+
             SqlConnection myConnection = new SqlConnection("user id =...;password=...;Integrated Security=SSPI;Data Source=" + cd.dataSource +
                  ";Initial Catalog=" + cd.catalog);
             try
@@ -75,7 +77,7 @@ namespace MonitorEOCDB
                 while (reader.Read())
                 {
                     replica = reader.GetGuid(0).ToString();
-                    Console.WriteLine("getPrimaryNodeId: " + replica);
+                    //Console.WriteLine("getPrimaryNodeId: " + replica);
                 }
 
             }

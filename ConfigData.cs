@@ -21,6 +21,8 @@ namespace MonitorEOCDB
         public String trantarget { get; set; }
         public int backlogthreshold { get; set; }
         public float tranthreshold { get; set; }
+        public int querytimeout { get; set; }
+        public int hourtosend { get; set; }
         public bool LoadConfig(System.Diagnostics.EventLog eventLog1)
         {
             try
@@ -40,6 +42,10 @@ namespace MonitorEOCDB
                 trantarget = System.Configuration.ConfigurationManager.AppSettings["trantarget"];
                 tmp = System.Configuration.ConfigurationManager.AppSettings["tranthreshold"];
                 tranthreshold = float.Parse(tmp);
+                tmp = System.Configuration.ConfigurationManager.AppSettings["querytimeout"];
+                querytimeout = Int32.Parse(tmp);
+                tmp = System.Configuration.ConfigurationManager.AppSettings["hourtosend"];
+                hourtosend = Int32.Parse(tmp);
 
             }
             catch (Exception e)
@@ -59,8 +65,10 @@ namespace MonitorEOCDB
                 "\nbacklogthreshold: " + backlogthreshold +
                 "\nbacklogsubscriber: " + backlogsubscriber + "\nlogfile: " + logfile +
                 "\ntrantarget: " + trantarget +
-                "\ntranthreshold: " + tranthreshold;
-        }
+                "\ntranthreshold: " + tranthreshold +
+                "\nquerytimeout: " + querytimeout +
+                "\nhourtosend: " + hourtosend;
+         }
     }
 }
 

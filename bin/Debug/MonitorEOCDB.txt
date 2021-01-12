@@ -151,3 +151,131 @@ is_database_joined: True
 10/20/2020 9:20:30 AM:TransactionLogProcessor::execSQLPerf: Connection has been opened.
 10/20/2020 9:20:30 AM:TransactionLogProcessor::execSQLPerf: Reading the results.
 10/20/2020 9:20:30 AM:TransactionLogProcessor::execSQLPerf: Connection has been opened.
+10/28/2020 10:51:51 AM:dataSource: juklite-lstnr
+dataSource1: juklite-sql1.elsagrd.com
+dataSource2: juklite-sql2.elsagrd.com
+catalog: model
+backlogcatalog: EOC_STAGING
+emailAddress: 10.24.3.1
+emailFrom: tom.giglia@brewster.eoccloud.co.uk
+emailTo: tgiglia@hotmail.com
+backlogthreshold: 100000
+backlogsubscriber: eoctran@local
+logfile: MonitorEOCDB.txt
+trantarget: EOC_TRAN
+tranthreshold: 0.01
+10/28/2020 10:51:51 AM:DatabaseReplicateStatesProcessor: Connection has been opened.
+10/28/2020 10:51:51 AM:DatabaseReplicateStatesProcessor: Reading the results.
+10/28/2020 10:51:51 AM:replica_id: cd08e36b-1a5c-4059-92f7-0c3725cc4bdb
+database_name: EOC_TRAN
+replicaName: JUKLITE-SQL1\SQL2104WIN2016
+is_fail_ready: True
+is_pending_secondary_suspend: False
+is_database_joined: True
+10/28/2020 10:51:51 AM:replica_id: ee62eb9b-e3bc-4ac7-948e-2544a6f426b0
+database_name: EOC_TRAN
+replicaName: JUKLITE-SQL2\SQL2104WIN2016
+is_fail_ready: True
+is_pending_secondary_suspend: False
+is_database_joined: True
+10/28/2020 10:51:51 AM:DatabaseReplicateStateProcesseor::analyze: There are 2 to analyze.
+10/28/2020 10:51:51 AM:EOC_TRAN AOAG is stable.
+10/28/2020 10:51:51 AM:getPrimaryNodeId: Connection has been opened.
+10/28/2020 10:51:51 AM:getPrimaryNodeId: Reading the results.
+10/28/2020 10:51:51 AM:TransactionLogProcessor::execSQLPerf: Connection has been opened.
+10/28/2020 10:51:51 AM:TransactionLogProcessor::execSQLPerf: Reading the results.
+10/28/2020 10:51:51 AM:TransactionLogProcessor::execSQLPerf: Connection has been opened.
+10/28/2020 11:05:25 AM:dataSource: juklite-lstnr
+dataSource1: juklite-sql1.elsagrd.com
+dataSource2: juklite-sql2.elsagrd.com
+catalog: model
+backlogcatalog: EOC_STAGING
+emailAddress: 10.24.3.1
+emailFrom: tom.giglia@brewster.eoccloud.co.uk
+emailTo: tgiglia@hotmail.com
+backlogthreshold: 100000
+backlogsubscriber: eoctran@local
+logfile: MonitorEOCDB.txt
+trantarget: EOC_TRAN
+tranthreshold: 0.01
+10/28/2020 11:05:25 AM:DatabaseReplicateStatesProcessor: Connection has been opened.
+10/28/2020 11:05:25 AM:DatabaseReplicateStatesProcessor: Reading the results.
+10/28/2020 11:05:25 AM:replica_id: cd08e36b-1a5c-4059-92f7-0c3725cc4bdb
+database_name: EOC_TRAN
+replicaName: JUKLITE-SQL1\SQL2104WIN2016
+is_fail_ready: True
+is_pending_secondary_suspend: False
+is_database_joined: True
+10/28/2020 11:05:25 AM:replica_id: ee62eb9b-e3bc-4ac7-948e-2544a6f426b0
+database_name: EOC_TRAN
+replicaName: JUKLITE-SQL2\SQL2104WIN2016
+is_fail_ready: True
+is_pending_secondary_suspend: False
+is_database_joined: True
+10/28/2020 11:05:25 AM:DatabaseReplicateStateProcesseor::analyze: There are 2 to analyze.
+10/28/2020 11:05:25 AM:EOC_TRAN AOAG is stable.
+10/28/2020 11:05:25 AM:getPrimaryNodeId: Connection has been opened.
+10/28/2020 11:05:25 AM:getPrimaryNodeId: Reading the results.
+10/28/2020 11:05:25 AM:TransactionLogProcessor::execSQLPerf: Connection has been opened.
+10/28/2020 11:05:25 AM:TransactionLogProcessor::execSQLPerf: Reading the results.
+10/28/2020 11:05:25 AM:TransactionLogProcessor::execSQLPerf: Connection has been opened.
+1/11/2021 4:56:56 PM:dataSource: juklite-lstnr
+dataSource1: juklite-sql1.elsagrd.com
+dataSource2: juklite-sql2.elsagrd.com
+catalog: model
+backlogcatalog: EOC_STAGING
+emailAddress: 10.24.3.1
+emailFrom: tom.giglia@brewster.eoccloud.co.uk
+emailTo: tgiglia@hotmail.com
+backlogthreshold: 100000
+backlogsubscriber: eoctran@local
+logfile: MonitorEOCDB.txt
+trantarget: EOC_TRAN
+tranthreshold: 0.01
+querytimeout: 1800
+hourtosend: 3
+1/11/2021 4:56:56 PM:DatabaseReplicaStatesRow: trying to connect to: juklite-lstnr
+1/11/2021 4:56:56 PM:DatabaseReplicateStatesProcessor: Connection has been opened.
+1/11/2021 4:56:56 PM:DatabaseReplicateStatesProcessor: Reading the results.
+1/11/2021 4:56:56 PM:replica_id: cd08e36b-1a5c-4059-92f7-0c3725cc4bdb
+database_name: EOC_TRAN
+replicaName: JUKLITE-SQL1\SQL2104WIN2016
+is_fail_ready: True
+is_pending_secondary_suspend: False
+is_database_joined: True
+1/11/2021 4:56:56 PM:replica_id: ee62eb9b-e3bc-4ac7-948e-2544a6f426b0
+database_name: EOC_TRAN
+replicaName: JUKLITE-SQL2\SQL2104WIN2016
+is_fail_ready: True
+is_pending_secondary_suspend: False
+is_database_joined: True
+1/11/2021 4:56:56 PM:DatabaseReplicateStateProcesseor::analyze: There are 2 to analyze.
+1/11/2021 4:56:56 PM:EOC_TRAN AOAG is stable.
+1/11/2021 4:56:56 PM:AOAG is STABLE
+1/11/2021 4:56:56 PM:getPrimaryNodeId: Connection has been opened.
+1/11/2021 4:56:56 PM:getPrimaryNodeId: Reading the results.
+1/11/2021 4:56:56 PM:TransactionLogProcessor::execSQLPerf: trying to connect to: juklite-lstnr
+1/11/2021 4:56:56 PM:TransactionLogProcessor::execSQLPerf: Connection has been opened.
+1/11/2021 4:56:56 PM:TransactionLogProcessor::execSQLPerf: Reading the results.
+1/11/2021 4:56:56 PM:used :8.727462 is greater than threshold: 0.01 time to flush the log.
+1/11/2021 4:56:56 PM:Its time to clear the log.
+1/11/2021 4:57:17 PM:System.Net.Mail.SmtpException: Failure sending mail. ---> System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond 10.24.3.1:25
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- End of inner exception stack trace ---
+   at System.Net.ServicePoint.GetConnection(PooledStream PooledStream, Object owner, Boolean async, IPAddress& address, Socket& abortSocket, Socket& abortSocket6)
+   at System.Net.PooledStream.Activate(Object owningObject, Boolean async, GeneralAsyncDelegate asyncCallback)
+   at System.Net.PooledStream.Activate(Object owningObject, GeneralAsyncDelegate asyncCallback)
+   at System.Net.ConnectionPool.GetConnection(Object owningObject, GeneralAsyncDelegate asyncCallback, Int32 creationTimeout)
+   at System.Net.Mail.SmtpConnection.GetConnection(ServicePoint servicePoint)
+   at System.Net.Mail.SmtpTransport.GetConnection(ServicePoint servicePoint)
+   at System.Net.Mail.SmtpClient.GetConnection()
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   --- End of inner exception stack trace ---
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at MonitorEOCDB.EmailNotification.sendEmail(ConfigData cd, String body, String subject) in C:\Users\tom.giglia\source\repos\MonitorEOCDB\MonitorEOCDB\EmailNotification.cs:line 54
+1/11/2021 4:57:17 PM:Send Email returned successfully.
+1/11/2021 4:57:17 PM:TransactionLogProcessor::executeTranLogClear: trying to connect to: juklite-lstnr
+1/11/2021 4:57:17 PM:TransactionLogProcessor::executeTranLogClear: Connection has been opened.
+1/11/2021 4:57:17 PM:TransactionLogProcessor::executeTranLogClear: Executing clear transaction log command.
+1/11/2021 4:57:39 PM:TransactionLogProcessor::executeTranLogClear: Finished clearing log.

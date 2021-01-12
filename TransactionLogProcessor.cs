@@ -10,6 +10,7 @@ namespace MonitorEOCDB
 {
     class TransactionLogProcessor
     {
+        public float logSpaceUsed { get; set; }
         public List<SQLPERFRow> rows { get; }
         public TransactionLogProcessor()
         {
@@ -17,8 +18,9 @@ namespace MonitorEOCDB
         }
         public bool execSQLPerf(ConfigData cd,String primaryHost)
         {
-            Console.WriteLine("execSQLPerf: trying to connect to: " + cd.dataSource);
-            SqlConnection myConnection = new SqlConnection("user id =...;password=...;Integrated Security=SSPI;Data Source=" + primaryHost +
+            
+            Logger.logIt(cd, "TransactionLogProcessor::execSQLPerf: trying to connect to: " + cd.dataSource);
+            SqlConnection myConnection = new SqlConnection("user id =...;password=...;Integrated Security=SSPI;Data Source=" + cd.dataSource +
                  ";Initial Catalog=master");
 
             try
@@ -38,7 +40,7 @@ namespace MonitorEOCDB
                     spr.spaceUsed = reader.GetFloat(2);
                     spr.status = reader.GetInt32(3);
                     rows.Add(spr);
-                    Console.WriteLine(spr.ToString() + "\n");
+                    //Console.WriteLine(spr.ToString() + "\n");
                 }
             }
             catch(Exception e)
@@ -51,17 +53,25 @@ namespace MonitorEOCDB
         }
         public bool executeTranLogClear(ConfigData cd, String primaryHost)
         {
-            Console.WriteLine("execSQLPerf: trying to connect to: " + cd.dataSource);
-            SqlConnection myConnection = new SqlConnection("user id =...;password=...;Integrated Security=SSPI;Data Source=" + primaryHost +
+            //Console.WriteLine("execSQLPerf: trying to connect to: " + cd.dataSource);
+            Logger.logIt(cd, "TransactionLogProcessor::executeTranLogClear: trying to connect to: " + cd.dataSource);
+            SqlConnection myConnection = new SqlConnection("user id =...;password=...;Integrated Security=SSPI;Data Source=" + cd.dataSource +
                  ";Initial Catalog=master");
             try
             {
                 myConnection.Open();
-                Logger.logIt(cd, "TransactionLogProcessor::execSQLPerf: Connection has been opened.");
+               
+                Logger.logIt(cd, "TransactionLogProcessor::executeTranLogClear: Connection has been opened.");
                 SqlCommand command = new SqlCommand("BACKUP LOG EOC_TRAN TO DISK='NUL'", myConnection);
-                Console.WriteLine("Executing clear transaction log command.");
-                int rowsAffected = command.ExecuteNonQuery();
-                Console.WriteLine("Finished Execute transaction log clear. rowsAffected = " + rowsAffected);
+                command.CommandTimeout = cd.querytimeout;
+                
+                Logger.logIt(cd, "TransactionLogProcessor::executeTranLogClear: Executing clear transaction log command.");
+                //int rowsAffected = command.ExecuteNonQuery();
+                //Console.WriteLine("Finished Execute transaction log clear. rowsAffected = " + rowsAffected);
+                SqlDataReader reader = command.ExecuteReader();
+                while (reader.Read()) { }
+                
+                Logger.logIt(cd, "TransactionLogProcessor::executeTranLogClear: Finished clearing log.");
 
             }
             catch(Exception e)
@@ -78,15 +88,18 @@ namespace MonitorEOCDB
             foreach(SQLPERFRow spr in rows)
             {
                 if(spr.databaseName.Equals(cd.trantarget)) {
-                    Console.WriteLine("TransactionLogProcessor::analyze: found target: " + cd.trantarget);
-                    if(spr.spaceUsed > cd.tranthreshold)
+                    //Console.WriteLine("TransactionLogProcessor::analyze: found target: " + cd.trantarget);
+                    logSpaceUsed = spr.spaceUsed;
+                    if (spr.spaceUsed > cd.tranthreshold)
                     {
-                        Console.WriteLine("used :" + spr.spaceUsed + " is greater than threshold: " + cd.tranthreshold + " time to flush the log.");
+                        //Console.WriteLine("used :" + spr.spaceUsed + " is greater than threshold: " + cd.tranthreshold + " time to flush the log.");
+                        Logger.logIt(cd, "used :" + spr.spaceUsed + " is greater than threshold: " + cd.tranthreshold + " time to flush the log.");
                         return true;
                     }
                     else
                     {
-                        Console.WriteLine("used :" + spr.spaceUsed + " is less than threshold: " + cd.tranthreshold + " not time to flush the log.");
+                        //Console.WriteLine("used :" + spr.spaceUsed + " is less than threshold: " + cd.tranthreshold + " not time to flush the log.");
+                        Logger.logIt(cd, "used :" + spr.spaceUsed + " is less than threshold: " + cd.tranthreshold + " not time to flush the log.");
                     }
                 }
             }

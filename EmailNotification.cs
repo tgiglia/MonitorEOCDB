@@ -24,6 +24,7 @@ namespace MonitorEOCDB
                 server.Port = 25;
                 server.EnableSsl = false;
                 server.Host = cd.emailAddress;
+                server.Credentials = new System.Net.NetworkCredential("tom.giglia", "RIA.45acp");
                 server.Send(mail);
                 Logger.logIt(cd, "testEmail: email sent.");
                
@@ -49,6 +50,7 @@ namespace MonitorEOCDB
                 server.Port = 25;
                 server.EnableSsl = false;
                 server.Host = cd.emailAddress;
+                server.Credentials = new System.Net.NetworkCredential("tom.giglia", "RIA.45acp");
                 server.Send(mail);
             }
             catch (Exception e)

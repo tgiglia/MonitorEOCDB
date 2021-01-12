@@ -12,6 +12,7 @@ namespace MonitorEOCDB
         public static void logIt(ConfigData cd, String s)
         {
             DateTime localTime = DateTime.Now;
+           
             if (!File.Exists(cd.logfile))
             {
                 using (StreamWriter sw = File.CreateText(cd.logfile))
